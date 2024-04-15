@@ -9,7 +9,7 @@ Homepage: http://nxos.org
 
 Package: debugfs-openrc
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, openrc, debugfs
+Depends: ${shlibs:Depends}, ${misc:Depends}, openrc
 Conflicts: systemd, systemd-sysv
 Description: Package to add debugfs configuration for OpenRC.
  This package will add the boot scripts to use debugfs
