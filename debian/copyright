@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: usbmuxd-openrc
-Source: https://github.com/Nitrux/usbmuxd-openrc.git
+Upstream-Name: debugfs-openrc
+Source: https://github.com/Nitrux/debugfs-openrc.git
 
 Files: *
 Copyright: 2022 Uri Herrera <uri_herrera@nxos.org>

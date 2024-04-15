@@ -1,12 +1,12 @@
 #! /bin/bash
 
-#   Add cryptsetup service files to runlevel/boot
+#   Add service file to runlevel directory
 
-/bin/cp /etc/init.d/usbmuxd /etc/runlevels/default || true
+/bin/cp /etc/init.d/debugfs-mount /etc/runlevels/default || true
 
-#   Add dmcrypt service files to runlevel/boot
+#   Add service to runlevel
 
-rc-update add usbmuxd default
+rc-update add debugfs-mount default
 
 #   Update services list
 
