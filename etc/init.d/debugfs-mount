@@ -3,7 +3,7 @@
 description="Mount debugfs at /sys/kernel/debug"
 
 depend() {
-    need localmount
+    need mountall
     after bootmisc
 }
 
