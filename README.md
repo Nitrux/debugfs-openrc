@@ -1,4 +1,4 @@
-# Nitrux debugfs for OpenRC
+# Debugfs for OpenRC
 
 Service files to use debugfs with Nitrux.
 
