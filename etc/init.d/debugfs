@@ -1,0 +1,27 @@
+#!/sbin/openrc-run
+# Copyright (c) 2007-2021 The Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+description="Mounts the debugfs virtual filesystem"
+
+depend() {
+	# debugfs is mounted inside /sys, so it needs the sysfs service to run first.
+	need sysfs
+}
+
+start() {
+	# The mountinfo command is an OpenRC helper to check if a path is mounted.
+	if mountinfo -q /sys/kernel/debug; then
+		return 0
+	fi
+
+	ebegin "Mounting debugfs"
+	mount -t debugfs none /sys/kernel/debug
+	eend $?
+}
+
+stop() {
+	# Unmounting is handled globally by the 'umountfs' shutdown service.
+	# A manual stop action is not needed here.
+	return 0
+}
