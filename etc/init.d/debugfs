@@ -12,6 +12,6 @@ start() {
 	fi
 
 	ebegin "Mounting debugfs"
-	mount -t debugfs none /sys/kernel/debug
+	mount -t debugfs debugfs /sys/kernel/debug
 	eend $?
 }

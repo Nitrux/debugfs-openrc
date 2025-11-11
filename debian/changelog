@@ -1,3 +1,9 @@
+debugfs-openrc (0.0.6)  nitrux; urgency=medium
+
+  * Mount debugfs for clarity and to align with /etc/fstab conventions.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Tue, 11 Nov 2025 13:36:00 -0500
+
 debugfs-openrc (0.0.5)  nitrux; urgency=medium
 
   * Cleanup service.
